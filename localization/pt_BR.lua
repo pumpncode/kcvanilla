@@ -52,12 +52,6 @@ return {
 			},
 			j_kcvanilla_guard = {
 				name = "Guarda Real",
-				text = {
-					"Após {C:attention}#2#{} {C:attention}Reis{} ou {C:attention}Rainhas{}", 
-					"pontuarem, venda este Curinga para",
-					"criar um Curinga {C:dark_edition}Negativo{} aleatório",
-					"{C:inactive}(Progresso: #1#/#2#){}"
-				}
 			},
 			j_kcvanilla_handy = {
 				name = "Mãozinha Curinga",
@@ -112,13 +106,7 @@ return {
 				}
 			},
 			j_kcvanilla_swiss = {
-				name = "Curinga Suíço",
-				text = {
-					'{C:mult}+#1#{} Multi por cada carta', 
-					'jogada na mão anterior', 
-					'e não foi pontuada',
-					'{C:inactive}(No momento, {C:mult}+#2#{C:inactive} Multi)'
-				}
+				name = "Curinga Suíço"
 			},
 			j_kcvanilla_tenpin = {
 				name = "Dez Pinos",

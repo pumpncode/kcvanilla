@@ -53,12 +53,6 @@ return {
             },
             j_kcvanilla_guard = {
                 name = "Guardia real",
-                text = {
-                    "Tras jugar {C:attention}#2#{} {C:attention}reyes{} o {C:attention}reinas{},",
-                    "vende este comodín para hacer un",
-                    "comodín al azar {C:dark_edition}negativo{}",
-                    "{C:inactive}(Progreso: #1#/#2#)"
-                }
             },
             j_kcvanilla_handy = {
                 name = "Comodín útil",
@@ -122,13 +116,7 @@ return {
                 }
             },
             j_kcvanilla_swiss = {
-                name = "Comodín suizo",
-                text = {
-                    "{C:mult}+#1#{} multi por cada",
-                    "carta que no se jugó",
-                    "en la mano anterior",
-                    "{C:inactive}(Actual: {C:mult}+#2#{C:inactive} multi)"
-                }
+                name = "Comodín suizo"
             },
             j_kcvanilla_tenpin = {
                 name = "Bolo",
@@ -140,11 +128,7 @@ return {
                 }
             },
             j_kcvanilla_rakugo = {
-                name = "Rakugo",
-                text = {
-                    "Si la mano jugada contiene una {C:attention}escalera{},",
-                    "reactiva cada {C:attention}4, 5, 6, 7{} o {C:attention}8{} jugado"
-                }
+                name = "Rakugo"
             },
             j_kcvanilla_rats = {
                 name = "¡Ratas!",

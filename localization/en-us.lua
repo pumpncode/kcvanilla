@@ -9,7 +9,7 @@ return {
             },
             j_kcvanilla_chan = {
                 name = "Joker-chan",
-                text = {"At end of round, gains", "{C:mult}+#1#{} Mult for each", "{C:blue}Common{} Joker",
+                text = {"At end of round, this", "gains {C:mult}+#1#{} Mult for", "each {C:blue}Common{} Joker",
                         "{C:inactive}(Currently {C:mult}+#2#{C:inactive} Mult){}"}
             },
             j_kcvanilla_collapse = {
@@ -34,14 +34,14 @@ return {
             },
             j_kcvanilla_guard = {
                 name = "Royal Guard",
-                text = {"After {C:attention}#2#{} {C:attention}Kings{} or {C:attention}Queens{}",
-                        "score, sell this to make a", "random Joker {C:dark_edition}Negative{}",
-                        "{C:inactive}(Progress: #1#/#2#){}"}
+                text = {"If played hand has ", "no {C:attention}Kings{} and {C:attention}Queens{},",
+                        "{C:chips}+#1#{} Chips for each", "{C:attention}King{} or {C:attention}Queen{} in",
+                        "your {C:attention}full deck{}", "{C:inactive}(Currently {C:chips}+#2#{C:inactive} Chips)"}
             },
             j_kcvanilla_handy = {
                 name = "Handy Joker",
                 text = {'If {C:attention}first discard{} of round', 'is a single enhanced card,',
-                        'gain {X:mult,C:white} X1 {} Mult, resets when', 'Boss Blind is defeated',
+                        'this gains {X:mult,C:white} X1 {} Mult, resets', 'when Boss Blind is defeated',
                         '{C:inactive}(Currently {X:mult,C:white} X#1# {C:inactive} Mult)'}
             },
             j_kcvanilla_irish = {
@@ -54,6 +54,11 @@ return {
                         'for each {C:attention}Mult{} card', 'scored this round',
                         "{C:inactive}(Next: {X:mult,C:white} X#2# {C:inactive} Mult)"}
             },
+            j_kcvanilla_rakugo = {
+                name = "Rakugo",
+                text = {'When a {C:attention}Booster Pack{}', 'is skipped, open', 'another {C:attention}Booster Pack{}',
+                        'of the same kind,', 'once between {C:attention}Blinds{}', '{C:inactive}(#1#)'}
+            },
             j_kcvanilla_redenvelope = {
                 name = "Red Envelope",
                 text = {'When Boss Blind is', 'defeated, earn {C:money}$8{} for', 'each {C:blue}Common{} Joker',
@@ -61,7 +66,8 @@ return {
             },
             j_kcvanilla_robo = {
                 name = "Jimbot",
-                text = {"This gains the {C:chips}Chip{} value", "of the first scoring", "numbered card each round",
+                text = {"This gains the {C:chips}Chip{} value", "of the first scoring",
+                        "{C:attention}numbered{} card each round",
                         "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)"}
             },
             j_kcvanilla_scapegoat = {
@@ -74,19 +80,15 @@ return {
                 text = {"{C:attention}+#1#{} hand size on final", "2 hands of round", "{C:inactive}(#2#)"}
             },
             j_kcvanilla_swiss = {
-                name = "Swiss Joker",
-                text = {'{C:mult}+#1#{} Mult for each', 'card that did not score', 'in the previous hand',
-                        '{C:inactive}(Currently {C:mult}+#2#{C:inactive} Mult)'}
+                name = "Swiss Cheese",
+                text = {"{X:mult,C:white} X1 {} Mult for each", "{C:attention}gap of 1 rank{} ", "between the ranks in",
+                        "played poker hand",
+                        "{C:inactive}(ex: {C:attention}2s{C:inactive} and {C:attention}4s{C:inactive}, but no {C:attention}3{C:inactive})"}
             },
             j_kcvanilla_tenpin = {
                 name = "Ten-Pin",
                 text = {'If played hand contains a', 'scoring {C:attention}10{}, {X:mult,C:white} X2 {} Mult',
                         'for next 2 hands', '{C:inactive}(#1#){}'}
-            },
-            j_kcvanilla_rakugo = {
-                name = "Rakugo",
-                text = {'If played hand contains a {C:attention}Straight{},',
-                        'retrigger each played {C:attention}4 5 6 7{} or {C:attention}8{}'}
             },
             j_kcvanilla_rats = {
                 name = "Rats!",
@@ -105,7 +107,12 @@ return {
         dictionary = {
             kcv_active = "Active",
             kcv_inactive = "Inactive",
-            kcv_rats_msg = "Rats!"
+            kcv_collapse_ex = "Collapse!",
+            kcv_rats_msg = "Rats!",
+            kcv_discover_all = "Discover all",
+            kcv_undiscover_all = "Undiscover all",
+            kcv_ready = "Currently available",
+            kcv_used = "Already used"
         },
         v_dictionary = {
             kcv_active_for_X_more_hands = "Active for #1# more hand(s)"
